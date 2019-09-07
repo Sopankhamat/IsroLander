@@ -4,6 +4,12 @@ public class Robot {
 	private String id;
 	private String name;
 	private String chip;
+	public Robot(String id, String name, String chip) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.chip = chip;
+	}
 	public String getId() {
 		return id;
 	}
@@ -22,4 +28,9 @@ public class Robot {
 	public void setChip(String chip) {
 		this.chip = chip;
 	}
+	@Override
+	public String toString() {
+		return "Robot [id=" + id + ", name=" + name + ", chip=" + chip + "]";
+	}
+	
 }
